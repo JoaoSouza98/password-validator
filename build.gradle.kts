@@ -18,10 +18,9 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter:2.6.2")
 	implementation("org.springframework.boot:spring-boot-starter-web:2.6.2")
-	implementation("org.springframework.boot:spring-boot-starter-validation:2.6.2")
 	implementation("org.springdoc:springdoc-openapi-ui:1.6.4")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.10")
+	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.1")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.2")
