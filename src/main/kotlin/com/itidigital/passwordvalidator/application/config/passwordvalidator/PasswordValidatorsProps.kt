@@ -1,8 +1,8 @@
-package com.itidigital.passwordvalidator.application.config
+package com.itidigital.passwordvalidator.application.config.passwordvalidator
 
 import kotlin.properties.Delegates
 
-class PasswordValidatorsConfigProps {
+class PasswordValidatorsProps {
 
     var requiredLength by Delegates.notNull<Int>()
     lateinit var specialCharSet: String
