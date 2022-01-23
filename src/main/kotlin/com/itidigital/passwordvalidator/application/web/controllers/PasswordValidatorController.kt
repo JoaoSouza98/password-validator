@@ -27,6 +27,6 @@ class PasswordValidatorController(private val passwordValidator: PasswordValidat
         ]
     )
     fun isValid(@RequestBody @Valid data: PasswordValidationRequest) = PasswordValidationResponse(
-        passwordValidator.isValid(data.password!!)
+        passwordValidator.isValid(data.password)
     )
 }
