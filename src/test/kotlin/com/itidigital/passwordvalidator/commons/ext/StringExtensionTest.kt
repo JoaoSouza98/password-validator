@@ -11,10 +11,10 @@ class StringExtensionTest {
         //arrange
         val regexString = ".*[0-9]+"
         val input = "Joao Antonio 23"
+        val expected = input.matches(Regex(regexString))
 
         //act
         val result = input.matches(regexString)
-        val expected = input.matches(Regex(regexString))
 
         //assert
         assertTrue(result)
@@ -27,10 +27,10 @@ class StringExtensionTest {
         //arrange
         val regexString = ".*[0-9]+"
         val input = "Joao Antonio"
+        val expected = input.matches(Regex(regexString))
 
         //act
         val result = input.matches(regexString)
-        val expected = input.matches(Regex(regexString))
 
         //assert
         assertFalse(result)
