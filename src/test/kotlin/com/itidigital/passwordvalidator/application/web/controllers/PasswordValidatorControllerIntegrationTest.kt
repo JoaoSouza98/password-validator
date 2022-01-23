@@ -23,6 +23,7 @@ class PasswordValidatorControllerIntegrationTest: BaseRestIntegrationTest() {
             body("is_valid", `is`(false))
          }
     }
+
     @Test
     fun `when a password composed by a duplication is informed should return 200 with is_valid false`() {
 
@@ -37,6 +38,7 @@ class PasswordValidatorControllerIntegrationTest: BaseRestIntegrationTest() {
             body("is_valid", `is`(false))
          }
     }
+
     @Test
     fun `when a password composed by two alphabetical lower case chars is informed should return 200 with is_valid false`() {
 
@@ -51,6 +53,7 @@ class PasswordValidatorControllerIntegrationTest: BaseRestIntegrationTest() {
             body("is_valid", `is`(false))
          }
     }
+
     @Test
     fun `when a password with no special chars and with lenght lower than the expected is informed should return 200 with is_valid false`() {
 
@@ -65,6 +68,7 @@ class PasswordValidatorControllerIntegrationTest: BaseRestIntegrationTest() {
             body("is_valid", `is`(false))
          }
     }
+
     @Test
     fun `when a password that ends with a repetition is informed should return 200 with is_valid false`() {
 
@@ -79,6 +83,7 @@ class PasswordValidatorControllerIntegrationTest: BaseRestIntegrationTest() {
             body("is_valid", `is`(false))
          }
     }
+
     @Test
     fun `when a password that starts and ends with the same char and case is informed should return 200 with is_valid false`() {
 
@@ -93,6 +98,7 @@ class PasswordValidatorControllerIntegrationTest: BaseRestIntegrationTest() {
             body("is_valid", `is`(false))
          }
     }
+
     @Test
     fun `when a password that contains a whitespace is informed should return 200 with is_valid false`() {
 

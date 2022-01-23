@@ -1,6 +1,7 @@
 package com.itidigital.passwordvalidator.domain
 
-import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 class LengthValidatorTest {
@@ -17,7 +18,7 @@ class LengthValidatorTest {
         val result = lengthValidator.meetsRequirement(input)
 
         //assert
-        Assertions.assertTrue(result)
+        assertTrue(result)
     }
 
     @Test
@@ -30,7 +31,7 @@ class LengthValidatorTest {
         val result = lengthValidator.meetsRequirement(input)
 
         //assert
-        Assertions.assertTrue(result)
+        assertTrue(result)
     }
 
     @Test
@@ -43,6 +44,6 @@ class LengthValidatorTest {
         val result = lengthValidator.meetsRequirement(input)
 
         //assert
-        Assertions.assertFalse(result)
+        assertFalse(result)
     }
 }

@@ -1,6 +1,7 @@
 package com.itidigital.passwordvalidator.domain
 
-import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 class AtLeastOneSpecialCharValidatorTest {
@@ -17,7 +18,7 @@ class AtLeastOneSpecialCharValidatorTest {
         val result = atLeastOneSpecialCharValidator.meetsRequirement(input)
 
         //assert
-        Assertions.assertTrue(result)
+        assertTrue(result)
     }
 
     @Test
@@ -30,7 +31,7 @@ class AtLeastOneSpecialCharValidatorTest {
         val result = atLeastOneSpecialCharValidator.meetsRequirement(input)
 
         //assert
-        Assertions.assertTrue(result)
+        assertTrue(result)
     }
 
     @Test
@@ -43,7 +44,7 @@ class AtLeastOneSpecialCharValidatorTest {
         val result = atLeastOneSpecialCharValidator.meetsRequirement(input)
 
         //assert
-        Assertions.assertTrue(result)
+        assertTrue(result)
     }
 
     @Test
@@ -56,6 +57,6 @@ class AtLeastOneSpecialCharValidatorTest {
         val result = atLeastOneSpecialCharValidator.meetsRequirement(input)
 
         //assert
-        Assertions.assertFalse(result)
+        assertFalse(result)
     }
 }
